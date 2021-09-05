@@ -17,7 +17,22 @@ people:
       url: https://www.instagram.com/ger.unicamp/
     - title: facebook
       url: https://www.facebook.com/unicampger/
-
+- name: Phoenix Unicamp
+  pic: 2
+  position: TODO 
+  social: 
+    - title: instagram
+      url: TODO
+    - title: facebook
+      url: TODO
+- name: IEEE Unicamp
+  pic: 3
+  position: TODO 
+  social: 
+    - title: instagram
+      url: TODO
+    - title: facebook
+      url: TODO
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
