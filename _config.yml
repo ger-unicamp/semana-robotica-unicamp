@@ -1,10 +1,10 @@
-url: https://ger-unicamp.github.io
-baseurl: /semana-robotica-unicamp/
+url: https://ger-unicamp.github.io/semana-robotica-unicamp/
+baseurl: 
 
 # Site settings
-title: Awesome Title
-email: your-email@domain.com
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+title: Semana da Robótica - Unicamp
+email: semana.robotica;unicamp@gmail.com
+description: "Primeiro evento de divulgação de robótica da Unicamp"
 
 
 # Team names, titles and social links
