@@ -1,6 +1,6 @@
 ---
 title: Webinars
-subtitle: Graphic Design
+subtitle: Apresentação
 layout: default
 modal-id: 6
 img: roundicons.png
