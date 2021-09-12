@@ -1728,6 +1728,9 @@
 .fa-diamond:before {
   content: "\f219";
 }
+.fa-project-diagram:before {
+  content: "\f542"
+}
 .fa-ship:before {
   content: "\f21a";
 }

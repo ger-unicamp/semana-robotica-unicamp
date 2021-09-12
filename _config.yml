@@ -19,20 +19,20 @@ people:
       url: https://www.facebook.com/unicampger/
 - name: Phoenix Unicamp
   pic: 2
-  position: TODO 
+  position: Equipe de Robótica da Unicamp 
   social: 
     - title: instagram
-      url: TODO
+      url: https://www.instagram.com/phoenixunicamp/
     - title: facebook
-      url: TODO
-- name: IEEE Unicamp
+      url: https://www.facebook.com/phoenixunicamp
+- name: Ramo Estudantil IEEE Unicamp
   pic: 3
-  position: TODO 
+  position: Um pedacinho da sociedade técnico-profissional global em Campinas 
   social: 
     - title: instagram
-      url: TODO
+      url: https://www.instagram.com/ieeeunicamp/
     - title: facebook
-      url: TODO
+      url: https://www.facebook.com/ramoieeeunicamp/
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
