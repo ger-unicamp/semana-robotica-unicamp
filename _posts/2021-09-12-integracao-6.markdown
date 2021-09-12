@@ -1,6 +1,6 @@
 ---
 title: Integração
-subtitle: Prática
+subtitle: Comunidade
 layout: default
 modal-id: 6
 img: noun_gamer_2909380.png
