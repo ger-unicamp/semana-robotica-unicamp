@@ -92,6 +92,9 @@ body {
   width: 387px;
   background-color: #FFCE95;
 }
+.btn:hover {
+  background-color: #FFDFB9;
+}
 @media (orientation: portrait) {
   .btn {
     height: 60px;

@@ -7,6 +7,7 @@ $secondary-1: #DD943F;
 $secondary-2: #ECAB5F;
 $secondary-3: #F8BD78;
 $secondary-4: #FFCE95;
+$secondary-5: #FFDFB9;
 
 $dark-1: #040A11;
 $dark-2: #0B1E31;
@@ -117,6 +118,9 @@ body{
   height: $btn-h;
   width: $btn-w;
   background-color: $secondary-4;
+  &:hover{
+    background-color: $secondary-5;
+  }
   @media (orientation: portrait) {
     height: $btn-h-cellphone;
     width: 100%;
