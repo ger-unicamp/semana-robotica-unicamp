@@ -31,7 +31,7 @@ $neuter-15: #E2E9FB;
 $btn-h: 120px;
 $btn-w: 387px;
 
-$desktop-medium: 2560px;
+$desktop-medium: 1280px;
 
 #hero{
   display: flex;
@@ -40,6 +40,9 @@ $desktop-medium: 2560px;
   background-position: 100% 100%;
   width: 100vw;
   height: 100vh;
+  @media (max-width: $desktop-medium){
+    background-image: url(../img/robot-desktop-m.png),  linear-gradient(to right, $dark-5 ,$dark-1);
+  }
 }
 
 #hero-copy{
