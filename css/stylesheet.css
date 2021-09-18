@@ -1,3 +1,7 @@
+#body {
+  background-image: linear-gradient(to right, #133251, #040A11);
+}
+
 #hero {
   display: flex;
   background-image: url(../img/robot-desktop-b.png), linear-gradient(to right, #133251, #040A11);
@@ -13,6 +17,7 @@
 }
 @media (orientation: portrait) {
   #hero {
+    height: calc(var(--vh, 1vh) * 100);
     background-image: linear-gradient(to right, #133251, #040A11);
   }
 }
