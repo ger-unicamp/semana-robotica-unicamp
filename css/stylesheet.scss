@@ -102,7 +102,7 @@ $desktop-medium: 1280px;
   width: $btn-w;
   background-color: $secondary-4;
   @media (orientation: portrait) {
-    width: 100%;
+    width: 90%;
   }
   a{
     font-family: 'Roboto', sans-serif;
@@ -118,7 +118,7 @@ $desktop-medium: 1280px;
     margin-left: 10px;
     background-color: $secondary-1;
     @media (orientation: portrait) {
-      width: 100%;
+      width: 900%;
     }
   }
   
