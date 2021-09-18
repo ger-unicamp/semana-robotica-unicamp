@@ -9,8 +9,8 @@ $secondary-3: #F8BD78;
 $secondary-4: #FFCE95;
 
 $dark-1: #040A11;
-$dark-3: #0B1E31;
-$dark-5: #133251;
+$dark-2: #0B1E31;
+$dark-3: #133251;
 
 $neuter-1: #090B11;
 $neuter-2: #1E2022;
@@ -30,20 +30,22 @@ $neuter-15: #E2E9FB;
 $btn-h: 120px;
 $btn-w: 387px;
 
+$btn-h-cellphone: 60px;
+
 $desktop-medium: 1280px;
 
 #hero{
   display: flex;
-  background-image: url(../img/robot-desktop-b.png),  linear-gradient(to right, $dark-5 ,$dark-1);
+  background-image: url(../img/robot-desktop-b.png),  linear-gradient(to right, $dark-3 ,$dark-1);
   background-repeat: no-repeat;
   background-position: 100% 100%;
   width: 100vw;
   height: 100vh;
   @media (max-width: $desktop-medium){
-    background-image: url(../img/robot-desktop-m.png),  linear-gradient(to right, $dark-5 ,$dark-1);
+    background-image: url(../img/robot-desktop-m.png),  linear-gradient(to right, $dark-3 ,$dark-1);
   }
   @media (orientation: portrait) {
-    background-image: linear-gradient(to right, $dark-5 ,$dark-1);
+    background-image: linear-gradient(to right, $dark-3 ,$dark-1);
   }
 }
 
@@ -105,22 +107,27 @@ $desktop-medium: 1280px;
   width: $btn-w;
   background-color: $secondary-4;
   @media (orientation: portrait) {
+    height: $btn-h-cellphone;
     width: 100%;
   }
   a{
     font-family: 'Roboto', sans-serif;
     font-size: 2.1875em;
-    color: $dark-5;
+    color: $dark-3;
+    @media (orientation: portrait) {
+      font-size: 2.1875em * 0.5;
+    }
   }
   + span{ 
     display: block;
     height: $btn-h;
     width: $btn-w;
-    
     margin-top: -$btn-h + 10px;
     margin-left: 10px;
     background-color: $secondary-1;
     @media (orientation: portrait) {
+      margin-top: -$btn-h-cellphone + 10px;
+      height: $btn-h-cellphone;
       width: 100%;
     }
   }
