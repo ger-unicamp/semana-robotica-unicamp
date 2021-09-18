@@ -13,8 +13,7 @@
 }
 @media (orientation: portrait) {
   #hero {
-    background-image: url(../img/robot-cellphone.png), linear-gradient(to right, #133251, #040A11);
-    background-position: 55% 100%;
+    background-image: linear-gradient(to right, #133251, #040A11);
   }
 }
 
@@ -26,7 +25,6 @@
   #hero-copy {
     margin: 0 10%;
     text-align: center;
-    padding-bottom: 200px;
   }
 }
 

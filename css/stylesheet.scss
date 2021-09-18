@@ -43,8 +43,7 @@ $desktop-medium: 1280px;
     background-image: url(../img/robot-desktop-m.png),  linear-gradient(to right, $dark-5 ,$dark-1);
   }
   @media (orientation: portrait) {
-    background-image: url(../img/robot-cellphone.png),  linear-gradient(to right, $dark-5 ,$dark-1);
-    background-position: 55% 100%;
+    background-image: linear-gradient(to right, $dark-5 ,$dark-1);
     
   }
 }
@@ -55,7 +54,6 @@ $desktop-medium: 1280px;
   @media (orientation: portrait) {
     margin: 0 10%;
     text-align: center;
-    padding-bottom: 200px;
   }
 }
 
@@ -102,7 +100,7 @@ $desktop-medium: 1280px;
   width: $btn-w;
   background-color: $secondary-4;
   @media (orientation: portrait) {
-    width: 90%;
+    width: 100%;
   }
   a{
     font-family: 'Roboto', sans-serif;
@@ -118,7 +116,7 @@ $desktop-medium: 1280px;
     margin-left: 10px;
     background-color: $secondary-1;
     @media (orientation: portrait) {
-      width: 900%;
+      width: 100%;
     }
   }
   
