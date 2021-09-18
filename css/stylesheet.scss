@@ -34,8 +34,13 @@ $btn-h-cellphone: 60px;
 
 $desktop-medium: 1280px;
 
-#body{
+html{
+  height: -webkit-fill-available;
+}
+
+body{
   background-image: linear-gradient(to right, $dark-3 ,$dark-1);
+  min-height: 100vh;
   min-height: -webkit-fill-available;
 }
 
