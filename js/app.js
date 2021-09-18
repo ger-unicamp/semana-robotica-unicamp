@@ -1,27 +1,11 @@
-class Language{
+// First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+let vh = window.innerHeight * 0.01;
+// Then we set the value in the --vh custom property to the root of the document
+document.documentElement.style.setProperty('--vh', `${vh}px`);
 
-    constructor(languageName, nativeSpeakers = -1, secondLanguageSpeakers = -1, languageTree = -1, relatedLanguages = [], url ="404"){
-        this.languageName = languageName;
-        this.nativeSpeakers = nativeSpeakers;
-        this.secondLanguageSpeakers = secondLanguageSpeakers;
-        this.languageTree = languageTree;
-        this.relatedLanguages = relatedLanguages;
-        this.url = url;
-        
-    }
-
-}
-
-let swedish;
-let norwegian;
-let danish;
-
-swedish = new Language("Swedish", 1, 1, null);
-norwegian = new Language("Norwegian",101, 1, null);
-danish = new Language("Danish", 1000, 1, null);
-
-swedish.relatedLanguages = [norwegian,danish];
-norwegian.relatedLanguages = [swedish,danish];
-danish.relatedLanguages = [swedish, norwegian];
-
-console.log(swedish.relatedLanguages);
+// We listen to the resize event
+window.addEventListener('resize', () => {
+  // We execute the same script as before
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
