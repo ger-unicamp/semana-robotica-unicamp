@@ -16,12 +16,12 @@ body {
   width: 100vw;
   height: 100vh;
 }
-@media (min-width: 1024px) and (max-width: 1280px) {
+@media (min-width: 1366px) and (max-width: 1280px) {
   #hero {
     background-image: url(../img/robot-desktop-m.png), linear-gradient(to right, #133251, #040A11);
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1366px) {
   #hero {
     background-image: linear-gradient(to right, #133251, #040A11);
     background-repeat: repeat-y;
@@ -33,7 +33,7 @@ body {
   align-self: center;
   margin-left: 120px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1366px) {
   #hero-copy {
     margin: 0 10%;
     text-align: center;
@@ -47,7 +47,7 @@ body {
   padding-bottom: 20px;
   color: #78F8AB;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1366px) {
   .hero-title {
     font-size: 3.75em;
   }
@@ -59,13 +59,13 @@ body {
   color: #fff;
   margin-bottom: 50px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1366px) {
   .hero-subtitle {
     font-size: 1.25em;
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1366px) {
   .wrapper {
     margin: 0 auto;
   }
@@ -74,7 +74,7 @@ body {
   display: inline-block;
   margin-right: 50px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1366px) {
   .wrapper > div {
     display: block;
     margin-right: 0px;
@@ -96,7 +96,7 @@ body {
 .btn:hover {
   background-color: #FFDFB9;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1366px) {
   .btn {
     height: 60px;
     width: 100%;
@@ -107,7 +107,7 @@ body {
   font-size: 2.1875em;
   color: #133251;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1366px) {
   .btn a {
     font-size: 1.09375em;
   }
@@ -120,7 +120,7 @@ body {
   margin-left: 10px;
   background-color: #DD943F;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1366px) {
   .btn + span {
     margin-top: -50px;
     height: 60px;
