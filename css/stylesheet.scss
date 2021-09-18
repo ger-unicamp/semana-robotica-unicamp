@@ -36,6 +36,7 @@ $desktop-medium: 1280px;
 
 #body{
   background-image: linear-gradient(to right, $dark-3 ,$dark-1);
+  min-height: -webkit-fill-available;
 }
 
 #hero{
