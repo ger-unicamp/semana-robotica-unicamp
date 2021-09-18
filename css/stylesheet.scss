@@ -8,7 +8,6 @@ $secondary-2: #ECAB5F;
 $secondary-3: #F8BD78;
 $secondary-4: #FFCE95;
 
-
 $dark-1: #040A11;
 $dark-3: #0B1E31;
 $dark-5: #133251;
@@ -43,11 +42,21 @@ $desktop-medium: 1280px;
   @media (max-width: $desktop-medium){
     background-image: url(../img/robot-desktop-m.png),  linear-gradient(to right, $dark-5 ,$dark-1);
   }
+  @media (orientation: portrait) {
+    background-image: url(../img/robot-cellphone.png),  linear-gradient(to right, $dark-5 ,$dark-1);
+    background-position: 55% 100%;
+    
+  }
 }
 
 #hero-copy{
   align-self: center;
   margin-left: 120px;
+  @media (orientation: portrait) {
+    margin: 0 10%;
+    text-align: center;
+    padding-bottom: 200px;
+  }
 }
 
 .hero-title{
@@ -65,24 +74,26 @@ $desktop-medium: 1280px;
   margin-bottom: 50px;
 }
 
-.wrapper > div{
-  display: inline-block;
-  margin-left: 50px;
+.wrapper{
+  @media (orientation: portrait) {
+    margin: 0 auto;
+  }
+  > div{
+    display: inline-block;
+    margin-right: 50px;
+    @media (orientation: portrait) {
+      display: block;
+      margin-right: 0px;
+      margin-bottom: 20px;
+    }
+  
+    &:last-child{
+      margin-right: 0px;
+      margin-bottom: 0px;
+    }
+  } 
 }
 
-.wrapper > div:first-child{
-  display: inline-block;
-  margin-left: 0;
-}
-
-.btn + span{ 
-  display: block;
-  height: $btn-h;
-  width: $btn-w;
-  margin-top: -$btn-h + 10px;
-  margin-left: 10px;
-  background-color: $secondary-1;
-}
 
 .btn{
   z-index: 1;
@@ -90,18 +101,32 @@ $desktop-medium: 1280px;
   height: $btn-h;
   width: $btn-w;
   background-color: $secondary-4;
-}
-
-.btn a{
-  font-family: 'Roboto', sans-serif;
-  font-size: 2.1875em;
-  color: $dark-5;
+  @media (orientation: portrait) {
+    width: 100%;
+  }
+  a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.1875em;
+    color: $dark-5;
+  }
+  + span{ 
+    display: block;
+    height: $btn-h;
+    width: $btn-w;
+    
+    margin-top: -$btn-h + 10px;
+    margin-left: 10px;
+    background-color: $secondary-1;
+    @media (orientation: portrait) {
+      width: 100%;
+    }
+  }
+  
 }
 
 .btn-cta{
   background-color: $primary-4;
-}
-
-.btn-cta + span{ 
-  background-color: $primary-1;
+  + span{ 
+    background-color: $primary-1;
+  }
 }
