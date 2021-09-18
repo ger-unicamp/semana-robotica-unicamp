@@ -34,6 +34,7 @@ $btn-w: 387px;
 $desktop-medium: 2560px;
 
 #hero{
+  display: flex;
   background-image: url(../img/robot-desktop-b.png),  linear-gradient(to right, $dark-5 ,$dark-1);
   background-repeat: no-repeat;
   background-position: 100% 100%;
@@ -42,7 +43,7 @@ $desktop-medium: 2560px;
 }
 
 #hero-copy{
-  padding-top: 20vh;
+  align-self: center;
   margin-left: 120px;
 }
 
