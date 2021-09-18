@@ -1,0 +1,70 @@
+#hero {
+  background-image: url(../img/robot-desktop-b.png), linear-gradient(to right, #133251, #040A11);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  width: 100vw;
+  height: 100vh;
+}
+
+#hero-copy {
+  padding-top: 20vh;
+  margin-left: 120px;
+}
+
+.hero-title {
+  max-width: 692px;
+  font-family: "Work Sans", sans-serif;
+  font-size: 7.5em;
+  padding-bottom: 20px;
+  color: #78F8AB;
+}
+
+.hero-subtitle {
+  font-family: "Roboto", monospace;
+  font-size: 2.5em;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.wrapper > div {
+  display: inline-block;
+  margin-left: 50px;
+}
+
+.wrapper > div:first-child {
+  display: inline-block;
+  margin-left: 0;
+}
+
+.btn + span {
+  display: block;
+  height: 120px;
+  width: 387px;
+  margin-top: -110px;
+  margin-left: 10px;
+  background-color: #DD943F;
+}
+
+.btn {
+  z-index: 1;
+  display: inline-block;
+  height: 120px;
+  width: 387px;
+  background-color: #FFCE95;
+}
+
+.btn a {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.1875em;
+  color: #133251;
+}
+
+.btn-cta {
+  background-color: #78F8AB;
+}
+
+.btn-cta + span {
+  background-color: #48FFA7;
+}
+
+/*# sourceMappingURL=stylesheet.css.map */

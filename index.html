@@ -1,20 +1,35 @@
----
-layout: default
----
-
-<div class="home">
-
-  <h1>Posts</h1>
-
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Semana da Robótica</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Space+Mono&family=Work+Sans:wght@700&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    </head>
+    <body>
+        <section id="hero">
+            <div id="hero-copy">
+                <h1 class="hero-title">Semana da Robótica</h1>
+                <p class="hero-subtitle">13 à 19 de Novembro</p>
+                <div class="wrapper">
+                    <div>
+                        <button class="btn">
+                            <a href="#">inscreva-se</a>
+                        </button>
+                        <span></span>
+                    </div>
+                    <div>
+                        <button class="btn">
+                            <a href="#">apresente-se</a>
+                        </button>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="js/app.js"></script>
+    </body>
+</html>

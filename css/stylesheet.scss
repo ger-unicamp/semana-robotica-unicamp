@@ -1,0 +1,103 @@
+$primary-1: #48FFA7;
+$primary-2: #76CE92;
+$primary-3: #6DE092;
+$primary-4: #78F8AB;
+
+$secondary-1: #DD943F;
+$secondary-2: #ECAB5F;
+$secondary-3: #F8BD78;
+$secondary-4: #FFCE95;
+
+
+$dark-1: #040A11;
+$dark-3: #0B1E31;
+$dark-5: #133251;
+
+$neuter-1: #090B11;
+$neuter-2: #1E2022;
+$neuter-3: #2D2F33;
+$neuter-4: #3C3E42;
+$neuter-5: #4B4E53;
+$neuter-6: #5A5E64;
+$neuter-8: #696D75;
+$neuter-9: #787C86;
+$neuter-10: #888C97;
+$neuter-11: #979CA8;
+$neuter-12: #A6ABB9;
+$neuter-13: #B5BBC8;
+$neuter-14: #C4CAD9;
+$neuter-15: #E2E9FB;
+
+$btn-h: 120px;
+$btn-w: 387px;
+
+$desktop-medium: 2560px;
+
+#hero{
+  background-image: url(../img/robot-desktop-b.png),  linear-gradient(to right, $dark-5 ,$dark-1);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  width: 100vw;
+  height: 100vh;
+}
+
+#hero-copy{
+  padding-top: 20vh;
+  margin-left: 120px;
+}
+
+.hero-title{
+  max-width: 692px;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 7.5em;
+  padding-bottom: 20px;
+  color: $primary-4;
+}
+
+.hero-subtitle{
+  font-family: 'Roboto', monospace;
+  font-size: 2.5em;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.wrapper > div{
+  display: inline-block;
+  margin-left: 50px;
+}
+
+.wrapper > div:first-child{
+  display: inline-block;
+  margin-left: 0;
+}
+
+.btn + span{ 
+  display: block;
+  height: $btn-h;
+  width: $btn-w;
+  margin-top: -$btn-h + 10px;
+  margin-left: 10px;
+  background-color: $secondary-1;
+}
+
+.btn{
+  z-index: 1;
+  display: inline-block;
+  height: $btn-h;
+  width: $btn-w;
+  background-color: $secondary-4;
+}
+
+.btn a{
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.1875em;
+  color: $dark-5;
+}
+
+.btn-cta{
+  background-color: $primary-4;
+}
+
+.btn-cta + span{ 
+  background-color: $primary-1;
+}
