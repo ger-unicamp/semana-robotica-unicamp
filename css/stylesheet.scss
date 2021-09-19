@@ -138,7 +138,7 @@ body{
     line-height: $btn-h;
     color: $dark-3;
     @media (max-width: $tablet){
-      font-size: 2em * 0.5;
+      font-size: 2em * 0.75;
       line-height: $btn-h-cellphone;
     }
   }
