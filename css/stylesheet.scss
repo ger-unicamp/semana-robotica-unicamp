@@ -33,9 +33,9 @@ $btn-w: 387px;
 
 $btn-h-cellphone: 60px;
 
-$desktop-medium: 1280px;
-$tablet: 1366px;
-$cellphone: 600px;
+$desktop-medium: 1440px;
+$tablet: 1024px;
+$cellphone: 758px;
 
 html{
   height: -webkit-fill-available;
@@ -124,6 +124,7 @@ body{
   height: $btn-h;
   width: $btn-w;
   background-color: $secondary-4;
+  text-align: center;
   &:hover{
     background-color: $secondary-5;
   }
@@ -131,12 +132,14 @@ body{
     height: $btn-h-cellphone;
     width: 100%;
   }
-  a{
+  span{
     font-family: 'Roboto', sans-serif;
-    font-size: 2.1875em;
+    font-size: 2em;
+    line-height: $btn-h;
     color: $dark-3;
     @media (max-width: $tablet){
-      font-size: 2.1875em * 0.5;
+      font-size: 2em * 0.5;
+      line-height: $btn-h-cellphone;
     }
   }
   + span{ 

@@ -16,12 +16,12 @@ body {
   width: 100vw;
   height: 100vh;
 }
-@media (min-width: 1366px) and (max-width: 1280px) {
+@media (min-width: 1024px) and (max-width: 1440px) {
   #hero {
     background-image: url(../img/robot-desktop-m.png), linear-gradient(to right, #133251, #040A11);
   }
 }
-@media (max-width: 1366px) {
+@media (max-width: 1024px) {
   #hero {
     background-image: linear-gradient(to right, #133251, #040A11);
     background-repeat: repeat-y;
@@ -33,13 +33,13 @@ body {
   align-self: center;
   margin-left: 120px;
 }
-@media (max-width: 1366px) {
+@media (max-width: 1024px) {
   #hero-copy {
     margin: 0 auto;
     text-align: center;
   }
 }
-@media (max-width: 600px) and (orientation: portrait) {
+@media (max-width: 758px) and (orientation: portrait) {
   #hero-copy {
     margin: 0 10%;
   }
@@ -52,7 +52,7 @@ body {
   padding-bottom: 20px;
   color: #78F8AB;
 }
-@media (max-width: 1366px) {
+@media (max-width: 1024px) {
   .hero-title {
     font-size: 3.75em;
   }
@@ -64,13 +64,13 @@ body {
   color: #fff;
   margin-bottom: 50px;
 }
-@media (max-width: 1366px) {
+@media (max-width: 1024px) {
   .hero-subtitle {
     font-size: 1.25em;
   }
 }
 
-@media (max-width: 1366px) {
+@media (max-width: 1024px) {
   .wrapper {
     margin: 0 auto;
   }
@@ -79,7 +79,7 @@ body {
   display: inline-block;
   margin-right: 50px;
 }
-@media (max-width: 1366px) {
+@media (max-width: 1024px) {
   .wrapper > div {
     display: block;
     margin-right: 0px;
@@ -97,24 +97,27 @@ body {
   height: 120px;
   width: 387px;
   background-color: #FFCE95;
+  text-align: center;
 }
 .btn:hover {
   background-color: #FFDFB9;
 }
-@media (max-width: 1366px) {
+@media (max-width: 1024px) {
   .btn {
     height: 60px;
     width: 100%;
   }
 }
-.btn a {
+.btn span {
   font-family: "Roboto", sans-serif;
-  font-size: 2.1875em;
+  font-size: 2em;
+  line-height: 120px;
   color: #133251;
 }
-@media (max-width: 1366px) {
-  .btn a {
-    font-size: 1.09375em;
+@media (max-width: 1024px) {
+  .btn span {
+    font-size: 1em;
+    line-height: 60px;
   }
 }
 .btn + span {
@@ -125,7 +128,7 @@ body {
   margin-left: 10px;
   background-color: #DD943F;
 }
-@media (max-width: 1366px) {
+@media (max-width: 1024px) {
   .btn + span {
     margin-top: -50px;
     height: 60px;
