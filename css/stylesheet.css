@@ -144,7 +144,7 @@ section {
 @media (max-width: 1024px) {
   .text-wrapper > p {
     width: 100%;
-    font-size: 0.75em;
+    font-size: 1em;
   }
 }
 
