@@ -3,42 +3,62 @@ html {
 }
 
 body {
+  background-image: -webkit-gradient(linear, left top, right top, from(#133251), to(#040A11));
   background-image: linear-gradient(to right, #133251, #040A11);
   min-height: 100vh;
   min-height: -webkit-fill-available;
+  font-family: 'Roboto', sans-serif;
 }
 
-#hero {
-  display: flex;
-  background-image: url(../img/robot-desktop-b.png), linear-gradient(to right, #133251, #040A11);
-  background-repeat: no-repeat;
-  background-position: 100% 100%;
+section {
   width: 100vw;
   height: 100vh;
 }
-@media (min-width: 1024px) and (max-width: 1440px) {
-  #hero {
-    background-image: url(../img/robot-desktop-m.png), linear-gradient(to right, #133251, #040A11);
-  }
-}
+
 @media (max-width: 1024px) {
-  #hero {
-    background-image: linear-gradient(to right, #133251, #040A11);
-    background-repeat: repeat-y;
+  section {
     height: calc(var(--vh, 1vh) * 100);
   }
 }
 
+#hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url(../img/robot-desktop-b.png), -webkit-gradient(linear, left top, right top, from(#133251), to(#040A11));
+  background-image: url(../img/robot-desktop-b.png), linear-gradient(to right, #133251, #040A11);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  #hero {
+    background-image: url(../img/robot-desktop-m.png), -webkit-gradient(linear, left top, right top, from(#133251), to(#040A11));
+    background-image: url(../img/robot-desktop-m.png), linear-gradient(to right, #133251, #040A11);
+  }
+}
+
+@media (max-width: 1024px) {
+  #hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(#133251), to(#040A11));
+    background-image: linear-gradient(to right, #133251, #040A11);
+  }
+}
+
 #hero-copy {
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   margin-left: 120px;
 }
+
 @media (max-width: 1024px) {
   #hero-copy {
     margin: 0 auto;
     text-align: center;
   }
 }
+
 @media (max-width: 758px) and (orientation: portrait) {
   #hero-copy {
     margin: 0 10%;
@@ -47,11 +67,12 @@ body {
 
 .hero-title {
   max-width: 692px;
-  font-family: "Work Sans", sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-size: 7.5em;
   padding-bottom: 20px;
   color: #78F8AB;
 }
+
 @media (max-width: 1024px) {
   .hero-title {
     font-size: 3.75em;
@@ -59,36 +80,72 @@ body {
 }
 
 .hero-subtitle {
-  font-family: "Roboto", monospace;
   font-size: 2.5em;
   color: #fff;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
+
 @media (max-width: 1024px) {
   .hero-subtitle {
     font-size: 1.25em;
   }
 }
 
+#description-section {
+  background-color: #0B1E31;
+}
+
 @media (max-width: 1024px) {
-  .wrapper {
+  .button-wrapper {
     margin: 0 auto;
   }
 }
-.wrapper > div {
+
+.button-wrapper > div {
   display: inline-block;
   margin-right: 50px;
 }
+
 @media (max-width: 1024px) {
-  .wrapper > div {
+  .button-wrapper > div {
     display: block;
     margin-right: 0px;
     margin-bottom: 20px;
   }
 }
-.wrapper > div:last-child {
+
+.button-wrapper > div:last-child {
   margin-right: 0px;
   margin-bottom: 0px;
+}
+
+.text-wrapper {
+  color: #fff;
+  margin-bottom: 50px;
+  margin-right: 0px;
+}
+
+.text-wrapper > p {
+  display: inline-block;
+  width: 50vw;
+  margin-bottom: 20px;
+  font-size: 1.25em;
+  line-height: 150%;
+}
+
+.text-wrapper > p:last-of-type {
+  margin-bottom: 0px;
+}
+
+.text-wrapper > p > span {
+  font-weight: 700;
+}
+
+@media (max-width: 1024px) {
+  .text-wrapper > p {
+    width: 100%;
+    font-size: 0.75em;
+  }
 }
 
 .btn {
@@ -98,28 +155,33 @@ body {
   width: 387px;
   background-color: #FFCE95;
   text-align: center;
+  font-weight: 700;
 }
+
 .btn:hover {
   background-color: #FFDFB9;
 }
+
 @media (max-width: 1024px) {
   .btn {
     height: 60px;
     width: 100%;
   }
 }
+
 .btn span {
-  font-family: "Roboto", sans-serif;
   font-size: 2em;
   line-height: 120px;
   color: #133251;
 }
+
 @media (max-width: 1024px) {
   .btn span {
-    font-size: 1.5em;
+    font-size: 1.25em;
     line-height: 60px;
   }
 }
+
 .btn + span {
   display: block;
   height: 120px;
@@ -128,6 +190,7 @@ body {
   margin-left: 10px;
   background-color: #DD943F;
 }
+
 @media (max-width: 1024px) {
   .btn + span {
     margin-top: -50px;
@@ -139,8 +202,8 @@ body {
 .btn-cta {
   background-color: #78F8AB;
 }
+
 .btn-cta + span {
   background-color: #48FFA7;
 }
-
 /*# sourceMappingURL=stylesheet.css.map */
